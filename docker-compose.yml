@@ -1,0 +1,7 @@
+version: '3'   # compose-file的语法版本
+services:    # 定义服务
+  web:      # 指定服务
+    build: .    # 使用当前目录下的Dockerfile构建镜像
+    ports:    # 指定端口映射
+      - 8888:8888
+    container_name: goweb_app1
